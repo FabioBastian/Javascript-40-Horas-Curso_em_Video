@@ -2,3 +2,8 @@ Modulo A
 Aula 1 - cliente/servidor
 Aula 2 - algo
 Aula 3 - referencias, livros, 
+Aula 4 - <script> 
+	window.alert("ALERTA")
+	window.confirm("CONFIRMAÇÃO")
+	window.prompt("INPUT DADOS")
+</script>
