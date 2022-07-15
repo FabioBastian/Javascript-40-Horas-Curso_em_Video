@@ -6,4 +6,43 @@ Aula 4 - <script>
 	window.alert("ALERTA")
 	window.confirm("CONFIRMAÇÃO")
 	window.prompt("INPUT DADOS")
+window.alert("Minha Primeira Mensagem");
+        confirmacao = window.confirm("Esta gostando do Js?");
+        nome = window.prompt("Qual é o seu nome?");
+        window.alert(nome);
+        if (confirmacao = true) {
+            window.alert("vc aceitou")
+        }
 </script>
+
+Aula 5 - 
+// comentario de uma linha;
+/* */ - comentario de mais de uma linha;
+var - para criar variaveis;
+TIPOS DE DADOS PRIMITIVOS
+number - numero
+string - texto
+boolean - true ou false
+null - 
+undefined - 
+object - 
+function - 
+
+typeof - comando para descobrir o tipo do dado
+
+Aula 06 -
+( + ) para concatenar
+window.prompt - o output é em string
+Number.parseInt(n) - para converter em inteiro
+Number.parseFloat(n) - para converter em float
+Number(n) - para não ter que expecificar se é inteiro ou float
+
+String(n) - para converter algo em string
+n.toString - para converter algo para string
+
+FORMATANDO STRINGS
+`o aluno ${nome} com ${idade} anos tirou a nota ${nota}`
+`texto ${variavel} texto`
+n.length - para dar o tamanho da string
+n.toUpperCase() - para colocar em letras maiusculas
+n.toLowerCase() - para colocar em letras minusculas
