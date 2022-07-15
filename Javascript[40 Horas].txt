@@ -19,30 +19,73 @@ Aula 5 -
 // comentario de uma linha;
 /* */ - comentario de mais de uma linha;
 var - para criar variaveis;
-TIPOS DE DADOS PRIMITIVOS
-number - numero
-string - texto
-boolean - true ou false
+TIPOS DE DADOS PRIMITIVOS;
+number - numero;
+string - texto;
+boolean - true ou false;
 null - 
 undefined - 
 object - 
 function - 
 
-typeof - comando para descobrir o tipo do dado
+typeof - comando para descobrir o tipo do dado;
 
 Aula 06 -
-( + ) para concatenar
-window.prompt - o output é em string
-Number.parseInt(n) - para converter em inteiro
-Number.parseFloat(n) - para converter em float
-Number(n) - para não ter que expecificar se é inteiro ou float
+( + ) para concatenar;
+window.prompt - o output é em string;
+Number.parseInt(n) - para converter em inteiro;
+Number.parseFloat(n) - para converter em float;
+Number(n) - para não ter que expecificar se é inteiro ou float;
 
-String(n) - para converter algo em string
-n.toString - para converter algo para string
+String(n) - para converter algo em string;
+n.toString - para converter algo para string;
 
 FORMATANDO STRINGS
-`o aluno ${nome} com ${idade} anos tirou a nota ${nota}`
-`texto ${variavel} texto`
-n.length - para dar o tamanho da string
-n.toUpperCase() - para colocar em letras maiusculas
-n.toLowerCase() - para colocar em letras minusculas
+`o aluno ${nome} com ${idade} anos tirou a nota ${nota}`;
+`texto ${variavel} texto`;
+var n = "Java Script";
+n.length - para dar o tamanho da string;
+n.toUpperCase() - para colocar em letras maiusculas;
+n.toLowerCase() - para colocar em letras minusculas;
+document.write() - para escrever na tela;
+EX - document.write(`O seu nome em minusculo é ${nome.toLocaleLowerCase()}.`);
+n.tofixed(2) - fixo duas casas depois do ponto para float;
+n.replace("." , ",") - mudar o . por , nos numeros;
+n.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) - comando para adicionar R$ na frente do dinheiro;
+
+Aula 07 -
+Operadores Aritmeticos
++ - soma;
+- - diminui;
+* - multiplica;
+/ - divide;
+% - resto da divisão inteira ex: 5 % 2 = 1;
+** - potencia ex: 5 ** 2 = 25;
+
+control + l - para limpar a tela do node.js
+
+ORDEM DE PRECEDENCIA
+primeiro () depois ** depois * / % depois + - ;
+
+x ++ - para adicionar ao x mais 1
+x -- - para diminuir ao x 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
