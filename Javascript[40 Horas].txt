@@ -84,8 +84,22 @@ Identidade
 5 === "5" = false
 5 === 5 = true
 
+Operadores Logicos
+! - negação, muda se é false para true ou true para false
+&& - conjunção, uma e outra, true e true = true, false e true = false
+|| - disjunção, ou, true e true = true, false e true = true, false e flase = false
 
+ORDEM DE PRECEDENCIA
+() depois ** depois /
+> depois < depois >=
+! depois && depois ||
 
+Operador Ternario
+? seguido de : 
+teste ? true : false
+Ex: media >= 7.0 ? "Aprovado" : "Reprovado";
+Ex: var res = n % 2 == 0 ? 5 : 9 - Se o resto da divisão de n / 2 é 0, recebe o valor 5;
+Ex: var idade = r >= 18 ? "É de maior" : "É de menor";
 
 
 
