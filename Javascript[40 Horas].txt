@@ -1,4 +1,4 @@
-Modulo A
+﻿Modulo A
 Aula 1 - cliente/servidor
 Aula 2 - algo
 Aula 3 - referencias, livros, 
@@ -70,7 +70,19 @@ primeiro () depois ** depois * / % depois + - ;
 x ++ - para adicionar ao x mais 1
 x -- - para diminuir ao x 1
 
+Operadores Relacionais - retorna true ou false 
+> - maior; 
+< - menor;
+>= - maior ou igual;
+<= - menor ou igual;
+== - igualdade;
+!= - diferente;
 
+Identidade 
+5 == 5 = true
+5 == "5" = true
+5 === "5" = false
+5 === 5 = true
 
 
 
