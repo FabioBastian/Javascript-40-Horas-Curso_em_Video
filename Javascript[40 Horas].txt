@@ -101,16 +101,107 @@ Ex: media >= 7.0 ? "Aprovado" : "Reprovado";
 Ex: var res = n % 2 == 0 ? 5 : 9 - Se o resto da divisão de n / 2 é 0, recebe o valor 5;
 Ex: var idade = r >= 18 ? "É de maior" : "É de menor";
 
+Aula 09 - DOM
+Document
+Object
+Model
+
+Arvore DOM
+MODELO HIERARQUICO
+window - objeto aonde que esta tudo a tela
+	location - local aonde esta a sua pagina
+	document - documento atual que vc esta
+		html - conteudo
+			head - cabeça
+				meta - dados importantes
+				title - titulo
+			bady - corpo 
+				h1 - titlo
+				p - paragrafo
+					strong - para deixar em negrito
+				div - caixa
+	history - vai guardando de onde vc veio ou aonde vc vai
+
+EX: window.document.write("CARAIAIIAIA");
+EX: window.document.write(window.document.charset); - busca configuração da pagina
+EX: window.document.write(window.navigator.appName); - mostra qual o navegador usado
+EX: window.document.write(window.document.URL); - mostra qual a URL que vc esta acesando
+
+SELECIONAR JAVASCRIPT MODOS
+
+Por marca - getElementByTagName(); digamos pegar todos os h1
+	EX: var p1 = window.document.getElementsByTagName("p")[0] - pega o primeiro p da pagina
+	EX: window.document.write(p1.innerText); - pegou o texto do primeiro p sem formatação
+	EX: window.document.write(p1.innerHTML); - pegou o texto do primeiro p com a formatação
+	Ex: p1.style.color = "blue" - muda o texto para azul
+
+Por ID - getElementById() - pega o elemento por ID
+	EX: var d = window.document.getElementById("msg") - coloca a div que tem o ID "msg" para a variavel d
+        EX: d.style.background = "green" - muda a cor de fundo da div
+        EX: d.innerText = "Estou aprendendo" - muda o conteudo de texto da div
+	EX: window.document.getElementById("msg").innerText = "OLÁ" - outro jeito de mudar o conteudo sem criar uma variavel
+
+Por nome - getElmentsByName() - pega os elementos por nome
+	EX: var d = window.document.getElementsByName("msg")[0] - coloca a div em uma variave no js
+        EX: d.innerText = "CHUPA" - muda o texto da div
+
+por classe - getElementByClassName() - pega o elemento pela classe
+	EX: window.document.getElementByClassName("msg").innerText = "OLÁ" - mudar o conteudo sem criar variavel pela classe
+
+por seletor - querySelector() - seleciona 1
+              querySelectorAll() - seleciona mais de 1
+# para IDs
+. para Classes
+	EX: var d = window.document.querySelector("#msg")
+        EX: d.innerText = "CHUpa"
+
+Aula 10 - Eventos DOM
+mouseenter - quando o mouse entra na div
+mouseout - quando o mouse sai da div
+onmousemove - qaundo move o mouse na div
+onmousedown - quando seguro o click no mouse
+mouseup - quando é desapertado o click do mouse
+click - quando é dado um aperto rapido no mouse(um click normal)
+
+FUNÇÕES
+function ação(algo){
+}
+
+EX: os bgl no html
+<div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()" >Interaja...</div>
+<script>
+        function clicar(){
+        window.document.getElementById("area").innerText = "Vc clicou"
+        }
+        function entrar(){
+        window.document.getElementById("area").innerText = "Vc entrou"
+        }
+        function sair(){
+        window.document.getElementById("area").innerText = "Vc saiu"
+        }
+    </script>
 
 
-
-
-
-
-
-
-
-
+Ex: os bgl somente no js
+<div id="area">Interaja...</div>
+<script>
+        var a = window.document.getElementById("area")
+        a.addEventListener("click", clicar)
+        a.addEventListener("mouseenter", entar)
+        a.addEventListener("mouseout", sair)
+        
+        function clicar(){
+        window.document.getElementById("area").innerText = "Vc clicou"
+        window.document.getElementById("area").style.background = "red"
+        }
+        function entrar(){
+        window.document.getElementById("area").innerText = "Vc entrou"
+        }
+        function sair(){
+        window.document.getElementById("area").innerText = "Vc saiu"
+        window.document.getElementById("area").style.background = "blue"
+        }
+    </script>
 
 
 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex002</title>
+    <style>
+        div#area{
+            font: normal 15pt normal;
+            background: green;
+            color: white;
+            width: 40vh;
+            height: 40vh;
+            line-height: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">Interaja...</div>
+    <script>
+        var a = window.document.getElementById("area")
+        a.addEventListener("click", clicar)
+        a.addEventListener("mouseenter", entar)
+        a.addEventListener("mouseout", sair)
+        
+        function clicar(){
+        window.document.getElementById("area").innerText = "Vc clicou"
+        window.document.getElementById("area").style.background = "red"
+        }
+        function entrar(){
+        window.document.getElementById("area").innerText = "Vc entrou"
+        }
+        function sair(){
+        window.document.getElementById("area").innerText = "Vc saiu"
+        window.document.getElementById("area").style.background = "blue"
+        }
+    </script>
+</body>
+</html>
