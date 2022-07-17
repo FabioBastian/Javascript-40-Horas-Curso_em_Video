@@ -1,6 +1,8 @@
-﻿Modulo A
+﻿Rocket City - fazer o curso de js deles
+
 Aula 1 - cliente/servidor
 Aula 2 - algo
+<marquee> # Eu Sou Bolsonaro! </marquee> - para deixar uma mensagem passando na tela
 Aula 3 - referencias, livros, 
 Aula 4 - <script> 
 	window.alert("ALERTA")
@@ -202,6 +204,17 @@ Ex: os bgl somente no js
         window.document.getElementById("area").style.background = "blue"
         }
     </script>
+
+NODE.JS, extenção, vs code COMO USAR - no vs code, apertar tecla F8 em um arquivo .js
+console.log("TEXTO") - para imprimir uma mensagem no console
+
+Aula 11 - Condicionais
+if(condição){
+
+}else{
+
+}
+
 
 
 
