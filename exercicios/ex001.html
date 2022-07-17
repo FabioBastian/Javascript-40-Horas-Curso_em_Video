@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex001</title>
+</head>
+<body>
+    <h1>Site para saber se vc é Brasileiro</h1>
+    <h2>Digite o pais aonde mora: <input type="text" name="txtpais" id="txtpais"></h2>
+    <input type="button" value="verificar" onclick="verifica()">
+    <div id="res">
+
+    </div>
+    <script>
+        var brasil = "brasil"
+        var txtp = window.document.querySelector("#txtpais");
+        var res = window.document.querySelector("#res")
+        function verifica(){
+            if (brasil == txtp.value){
+                res.innerHTML = "Vc é Brasileiro"
+            }else{
+                res.innerHTML = "Vc é esranjeiro"
+            }
+        }
+    </script>
+</body>
+</html>

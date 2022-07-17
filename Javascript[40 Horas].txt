@@ -210,9 +210,9 @@ console.log("TEXTO") - para imprimir uma mensagem no console
 
 Aula 11 - Condicionais
 if(condição){
-
+	ação
 }else{
-
+	ação
 }
 
 
