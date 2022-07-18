@@ -164,6 +164,8 @@ onmousemove - qaundo move o mouse na div
 onmousedown - quando seguro o click no mouse
 mouseup - quando é desapertado o click do mouse
 click - quando é dado um aperto rapido no mouse(um click normal)
+onload - quando é carregado a pagina EX: <body onload="carregar()">;
+
 
 FUNÇÕES
 function ação(algo){
