@@ -216,6 +216,42 @@ if(condição){
 }
 
 
+Aula 12 - Condiçoes parte 2
+
+CONDIÇÃO ANINHADA
+EX: 
+if (condição){
+}else if (condição) {
+	console.log("Imprime algo no console")
+}else{
+}
+
+EX: 
+var agora = new Date() - cria uma variavel hora
+var hora = agora.getHours() - passa os dados da variavel agora para a variavel data pegando as horas
+
+CONDIÇÃO MÚLTIPLA
+
+SWITCH - SO FUNCIONA COM VALORES PONTUAIS, OU STRINGS PONTUAIS, NÃO FUNCIONA COM INTERVALOS
+EX: switch (expressão) {
+	case valor1:
+	break - precisa do break para sair do switch
+
+	case valor2:
+	break
+
+	case valor3: 
+	break
+
+	default: - padão
+	brak
+
+}
+
+
+
+
+
 
 
 
