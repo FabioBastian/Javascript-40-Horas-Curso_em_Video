@@ -265,11 +265,18 @@ do {
 
 Aula 14 - estrutura de repetição com variavel de controle
 
-for (inicio ; teste; incremento) {
+for (inicio; teste; incremento) {
 	"comando"
 }
 
+EX: 
 
+for (var c=1; c<=10; c++){
+	"comando"
+}
+
+DEBUG
+F5 - node.js - inpeção (variavel que quer ver o status atual) - f10 para ir executando aos poucos o programa.
 
 
 
