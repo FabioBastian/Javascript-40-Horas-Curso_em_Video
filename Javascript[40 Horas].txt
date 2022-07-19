@@ -250,6 +250,29 @@ EX: switch (expressão) {
 
 }
 
+Aula 13 - Repetições, se repete ate que a condição seja falsa
+
+CONDIÇÃO TESTADA NO INICIO
+while (condição) {
+	"comando"
+}
+
+CONDIÇÃO TESTADA NO FINAL
+do {
+	"comando"
+} while(condição)
+
+
+Aula 14 - estrutura de repetição com variavel de controle
+
+for (inicio ; teste; incremento) {
+	"comando"
+}
+
+
+
+
+
 
 
 
