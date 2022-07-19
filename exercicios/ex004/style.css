@@ -15,6 +15,10 @@ body{
     font: normal 15pt Arial;
 }
 
+div{
+    padding: 4vh;
+}
+
 header{
     padding: 2em;
     color: white;

@@ -12,11 +12,37 @@
     <header><h1>Verificador de idade</h1></header>
     <section> 
         <div>
-            <h3>Digite a sua idade <input type="text" id="msg"></h3>
-            <option value=""></option>
+            <p>Ano de nascimento:
+                <input type="number" id="msg" min="0">
+            </p>
+            <p>
+                <input type="radio" name="radsex" id="masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+                <br>
+                <select id="opcao">
+                    <option>Escolha o mês</option>
+                    <option value="0">Janeiro</option>
+                    <option value="1">Fevereiro</option>
+                    <option value="2">Março</option>
+                    <option value="3">Abril</option>
+                    <option value="4">Maio</option>
+                    <option value="5">Junho</option>
+                    <option value="6">Julho</option>
+                    <option value="7">Agosto</option>
+                    <option value="8">Setembro</option>
+                    <option value="9">Outubro</option>
+                    <option value="10">Novembro</option>
+                    <option value="11">Dezembro</option>
+                </select>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verifica()">
+            </p>
         </div>
         <div id="res">
-
+            Preencha os dados acima para ver o resultado
         </div>
     </section>
     <footer>&copy; roda pé </footer>
