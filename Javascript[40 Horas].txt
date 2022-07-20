@@ -21,6 +21,7 @@ Aula 5 -
 // comentario de uma linha;
 /* */ - comentario de mais de uma linha;
 var - para criar variaveis;
+let - para criar um outro tipo de variavel, escopo menor
 TIPOS DE DADOS PRIMITIVOS;
 number - numero;
 string - texto;
@@ -278,9 +279,29 @@ for (var c=1; c<=10; c++){
 DEBUG
 F5 - node.js - inpeção (variavel que quer ver o status atual) - f10 para ir executando aos poucos o programa.
 
+Aula 15 - Variaveis compostas
+EX: 
+let num = [5, 8, 6, 4, 5, 6] - criação de um array
+num[0] = 4 - modou o valor da primeira casa por 4
+num.push(7) - cria mais uma casa na ultima posição do array e adiciona o valor 7
+num.lenght - retorna o tamanho do array
+num.sort() - ordena o array em ordem crescente
+console.log(num) - imprime todo o array
 
+EX: Percurso em vetores
+for(let pos=0; pos < valores.length; pos++){
+	console.log(`A posição ${pos} tem o valor ${valores[po]}`)
+}
 
+EX: para  cada posição em num vou mostrar o num pos
+for(let pos in num){
+	console.log(num[pos])
+}
 
+EX: 
+num.indexOf(3) - retorna a posição no array aonde tem um 3, se não tiver um 3 no array retorna -1 (valor parão)
+
+-1 - VALOR PADÃO DE QUANDO NÃO É ACHADO O QUE FOI PESQUISADO.
 
 
 
