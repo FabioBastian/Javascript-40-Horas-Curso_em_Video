@@ -1,5 +1,6 @@
 function carregar(){
     array = []
+    soma = 0
 }
 
 function adicionar(){
@@ -11,6 +12,7 @@ function adicionar(){
         window.alert("VALOR INVALIDO")
     }else{
         array.push(num)
+        soma += num
         lista.innerHTML += `O valor: ${num} foi adicionado.<br>`
         res.innerHTML = "Aguardando solicitação..."
     }
@@ -19,8 +21,12 @@ function calcular(){
     if (array.length == 0){
         window.alert("NÃO FOI ADICIONADO NENHUM NUMERO")
     }else{
-        res.innerHTML = `Ao todo temos ${array.length} adicionados.`
-        
-
+        res.innerHTML = `Temos ${array.length} valores adicionados<br>`
+        const min = Math. min(...array);
+        const max = Math. max(...array);
+        res.innerHTML += `O menor valor é ${min}<br>`
+        res.innerHTML += `O maior valor é ${max}<br>`
+        res.innerHTML += `A soma é ${soma}<br>`
+        res.innerHTML += `A media é ${soma / array.length}`
     }
 }
