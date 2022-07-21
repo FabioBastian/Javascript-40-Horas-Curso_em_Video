@@ -347,6 +347,6 @@ function fatorial(n){
 
 console.log(fatorial(5))
 
-
-
-
+EX: - IMPORTANTE ARRAY
+const min = Math. min(...array); - retorna o menor valor do array
+const max = Math. max(...array); - retorna o maior valor do array

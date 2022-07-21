@@ -2,7 +2,6 @@ function carregar(){
     array = []
     soma = 0
 }
-
 function adicionar(){
     var txtnum = document.querySelector("input#txtnum")
     var lista = document.querySelector("div#lista")
@@ -27,6 +26,6 @@ function calcular(){
         res.innerHTML += `O menor valor é ${min}<br>`
         res.innerHTML += `O maior valor é ${max}<br>`
         res.innerHTML += `A soma é ${soma}<br>`
-        res.innerHTML += `A media é ${soma / array.length}`
+        res.innerHTML += `A media é ${(soma / array.length).toFixed(4)}`
     }
 }
