@@ -304,6 +304,44 @@ num.indexOf(3) - retorna a posição no array aonde tem um 3, se não tiver um 3
 -1 - VALOR PADÃO DE QUANDO NÃO É ACHADO O QUE FOI PESQUISADO.
 
 
+Aula 16 - Funções: 
+# São ações executadas assim que são chamadas ou me decotência de algum evento;
+# Uma função pode receber parâmetros e retornar um resultado;
+
+SUA MAE LHE MANDAR COMPRAR LEITE
+chamada/requisição - mãe mandando o filho
+parametro - como é para comprar o leite
+ação - filho ir compar e trazer o leite
+retono - a caixa de leite
+
+EX:
+function ação(parametro){
+	return res - retorno
+}
+ação(5) - chamada
+
+EX: retorna um numero par ou impar
+function parimp(n){
+	if(n%2==0){
+	return "par"
+	}else{
+	return "impar"
+	}
+}
+let res = parimp(11)
+
+EX: RECURSIVIDADE DE FUNÇÕES
+
+function fatorial(n){
+    if (n==1) {
+        return 1
+    }else{
+        return n * fatorial(n-1)
+    }
+}
+
+console.log(fatorial(5))
+
 
 
 
