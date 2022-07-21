@@ -303,6 +303,11 @@ num.indexOf(3) - retorna a posição no array aonde tem um 3, se não tiver um 3
 
 -1 - VALOR PADÃO DE QUANDO NÃO É ACHADO O QUE FOI PESQUISADO.
 
+EX: para percorer listas
+var numbers = [1, 4, 9];
+var doubles = numbers.map(function(num) {
+	return num * 2;
+});
 
 Aula 16 - Funções: 
 # São ações executadas assim que são chamadas ou me decotência de algum evento;
@@ -341,7 +346,6 @@ function fatorial(n){
 }
 
 console.log(fatorial(5))
-
 
 
 
