@@ -7,7 +7,7 @@ function adicionar(){
     var lista = document.querySelector("div#lista")
     var res = document.querySelector("div#res")
     var num = Number(txtnum.value)
-    if (num < 0 || num > 100){
+    if (num <= 0 || num > 100){
         window.alert("VALOR INVALIDO")
     }else{
         array.push(num)
@@ -26,6 +26,6 @@ function calcular(){
         res.innerHTML += `O menor valor é ${min}<br>`
         res.innerHTML += `O maior valor é ${max}<br>`
         res.innerHTML += `A soma é ${soma}<br>`
-        res.innerHTML += `A media é ${(soma / array.length).toFixed(4)}`
+        res.innerHTML += `A media é ${(soma / array.length).toFixed(20)}`
     }
 }
