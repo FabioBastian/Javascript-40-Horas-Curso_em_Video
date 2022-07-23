@@ -29,4 +29,5 @@ function solucao(palavraCorreta, tentativa) {
     let resposta = taxa;
     return resposta;
 }
+console.log(solucao(palavraCorreta="Teste", tentativa="Poste"))
 module.exports = { solucao }

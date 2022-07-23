@@ -158,6 +158,14 @@ por seletor - querySelector() - seleciona 1
 	EX: var d = window.document.querySelector("#msg")
         EX: d.innerText = "CHUpa"
 
+
+ADICIONAR NO HTML COM JAVA SCRIPT
+EX: 
+let item = document.createElement("option")
+item.text = `valor ${num.value} adicionado.`
+lista.appendChild(item)
+
+
 Aula 10 - Eventos DOM
 mouseenter - quando o mouse entra na div
 mouseout - quando o mouse sai da div
@@ -350,3 +358,30 @@ console.log(fatorial(5))
 EX: - IMPORTANTE ARRAY
 const min = Math. min(...array); - retorna o menor valor do array
 const max = Math. max(...array); - retorna o maior valor do array
+
+
+O QUE ESTUDAR A PARTIR DAQUI
+
+fazer o curso de HTML 5 - curso em video
+Estudar mais funçoes, muito importante, funçoes do tipo: arrow function, call backs, funções anonimas, ais ifes, ifes.
+estudar objetos, talvez fazer o curso de objetos que é em java - curso em video
+estudar modularização, para modularizar o seu codigo
+estudar expressoes regulares, RegEX - ajuda muito
+estudar JSON - importante
+estudar AJAX - interaçoes do tipo carregara pagina automatico quando termina o conteudo
+estudar NodeJs, para rodar os seus programas do lado do servidor - JQueery, Vue.js, Angular, React
+
+
+BASICO DE OBJETOS - introdução - funções dentro de variaveis
+let num = [ , , ] - array é heterogenico, aceita string, number, boolean
+let amigo = {nome:"josé",sexo:"M",peso:85,4,engordar(p){}}
+visualização do amigo
+-----------------------------------------
+|  José  |   M  |  85.4  |  [function]  | - dados
+----------------------------------------
+|  nome  | sexo |  peso  |  engordar()  | - item 
+-----------------------------------------
+
+
+
+

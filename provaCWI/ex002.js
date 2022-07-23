@@ -18,5 +18,5 @@ function solucao(mapa) {
 
     return resposta;
 }
-console.log(solucao(["e", "d", "b"]))
+console.log(solucao(["e", "d", "b", "b", "b", "e"]))
 module.exports = { solucao }

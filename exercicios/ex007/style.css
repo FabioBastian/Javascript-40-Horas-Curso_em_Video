@@ -20,12 +20,13 @@ header{
     color: white;
     text-align: center;
 }
-
+div{
+    padding: 1em;
+}
 div#lista{
     font-size: 100%;
     height: 20vh;
     overflow: auto;
-    padding: 5px;
 }
 
 section{

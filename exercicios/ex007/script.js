@@ -10,10 +10,16 @@ function adicionar(){
     if (num <= 0 || num > 100){
         window.alert("VALOR INVALIDO")
     }else{
-        array.push(num)
-        soma += num
-        lista.innerHTML += `O valor: ${num} foi adicionado.<br>`
-        res.innerHTML = "Aguardando solicitação..."
+        if (array.indexOf(num) != -1){
+            window.alert("O VALOR JA CONSTA NA LISTA")
+        }else{
+            array.push(num)
+            soma += num
+            lista.innerHTML += `O valor: ${num} foi adicionado.<br>`
+            res.innerHTML = "Aguardando solicitação..."
+            txtnum.value = ""
+            txtnum.focus()
+        }
     }
 }
 function calcular(){
@@ -26,6 +32,6 @@ function calcular(){
         res.innerHTML += `O menor valor é ${min}<br>`
         res.innerHTML += `O maior valor é ${max}<br>`
         res.innerHTML += `A soma é ${soma}<br>`
-        res.innerHTML += `A media é ${(soma / array.length).toFixed(20)}`
+        res.innerHTML += `A media é ${(soma / array.length).toFixed(4)}`
     }
 }
