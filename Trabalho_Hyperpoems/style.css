@@ -1,0 +1,28 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+p{
+    padding: 8px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.container{
+    display: grid;
+    grid-template-columns: 80vh 80vh;
+
+}
+input{
+    align-items: center;
+}
+span{
+    color: red;
+}
