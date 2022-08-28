@@ -12,7 +12,7 @@ main{
     justify-content: space-between;
     text-align: center;
     align-items: center;
-    height: 100vh;
+    height: auto;
     
 }
 .container{
@@ -25,4 +25,29 @@ input{
 }
 span{
     color: red;
+}
+
+
+
+
+
+.alert-box {
+    text-align: center;
+    border: 1px solid transparent;
+    width: 100vw; 
+    height: 80vh;
+}
+
+.success {
+    text-align: center;
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    display: none;
+}
+.voltarAoNormal{
+    display: flex;
+    width: 100vw; 
+    height: 20vh;
+    align-items: center;
 }

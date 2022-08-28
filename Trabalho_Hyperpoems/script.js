@@ -116,6 +116,13 @@ function traducao4(){
 
 
 function pegadinha(){
-    var pegadinha = document.querySelector("div#container")
-    pegadinha.innerHTML = "<h1>VC CAIU NA PEGADINHA</h1>"
+    var pegadinha = document.querySelector("main")
+    var voltaAoNormal = document.querySelector("div#voltarAoNormal")
+
+    pegadinha.innerHTML = "<div class='alert-box success' >CAIU NA PEGADINHA!!!</div>"
+    $( "div.success" ).fadeIn( 300 ).delay( 2500 ).fadeOut( 400 )
+    voltaAoNormal.innerHTML = "<input type='button' value='Voltar ao normal' onclick='voltaAoNormal()'>"
+}
+function voltaAoNormal(){
+    location.reload();
 }
