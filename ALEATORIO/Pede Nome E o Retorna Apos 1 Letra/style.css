@@ -1,0 +1,36 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    background: lightskyblue;
+    font: normal 15pt Arial;
+}
+
+header{
+    padding: 2em;
+    color: white;
+    text-align: center;
+}
+
+div#resposta{
+    font-size: 100%;
+    width: 30vw;
+    height: 35vh;
+    overflow: auto;
+}
+
+footer{
+    padding: 2em;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
