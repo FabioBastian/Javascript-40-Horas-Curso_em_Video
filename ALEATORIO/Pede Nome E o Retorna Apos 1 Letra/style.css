@@ -1,36 +1,67 @@
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
     box-sizing: border-box;
 }
-
-body{
+body {
+    background-color: ghostwhite;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
     align-items: center;
+    justify-content: space-between;
     height: 100vh;
-    background: lightskyblue;
-    font: normal 15pt Arial;
+    width: 100vw;
+    padding: 1%;
 }
-
-header{
-    padding: 2em;
-    color: white;
-    text-align: center;
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 70vh;
+    width: 70vw;
 }
-
-div#resposta{
-    font-size: 100%;
-    width: 30vw;
-    height: 35vh;
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 50%;
+    width: 50%;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 12%;
+}
+.footer-sessao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+}
+#res {
     overflow: auto;
+    
 }
-
-footer{
-    padding: 2em;
-    color: white;
-    text-align: center;
-    font-style: italic;
+.footer-sessao-link {
+    text-decoration: none;
+    color: gray;
+}
+.footer-sessao-autor {
+    display: flex;
+    align-items: center;
+}
+.logo-github {
+    height: 25px;
+    width: 25px;
+    border-radius: 15%;
+}
+.footer-sessao-autor-nome {
+    margin-right: 15px;
 }

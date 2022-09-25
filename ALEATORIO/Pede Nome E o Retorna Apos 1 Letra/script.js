@@ -1,23 +1,42 @@
 function processa(){
     var txtnome = document.querySelector("input#txtnome")
-    var resposta = document.querySelector("div#resposta") 
-    var nome = String(txtnome.value) 
+    var numopcao = document.querySelector("select#numopcao")
+    var numposicao = document.querySelector("input#numposicao")
+    var resposta = document.querySelector("div#res") 
+    var nome = String(txtnome.value)
+    var opcao = Number(numopcao.value)
+    var posicao = Number(numposicao.value)
+
     resposta.innerHTML += `O nome original: ${nome}<br>`
+
     txtnome.value = ""
-    txtnome.focus()
-    arrayAlfabeto = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-    arrayNome = nome.split('')
     var txtResposta = ''
-    for (let c = 0; c < arrayNome.length; c++) {
-        const letra = arrayNome[c]
-        for (let i = 0; i < arrayAlfabeto.length; i++) {
-            const letraAlfabeto = arrayAlfabeto[i];
-            if (letra == letraAlfabeto) {
-                var posicao = i + 1
-                txtResposta += arrayAlfabeto[posicao]
-                
-            }
-        }
+    arrayLetra = []
+    arrayAlfabeto = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+    arrayNome = nome.split(' ')
+    
+    for (let i = 0; i < arrayNome.length; i++) {
+        const palavra = arrayNome[i];
+        arrayLetra = palavra.split('');
+        for (let i = 0; i < arrayLetra.length; i++) {
+            const letra = arrayLetra[i];
+            for (let i = 0; i < arrayAlfabeto.length; i++) {
+                const letraAlfabeto = arrayAlfabeto[i];
+                if (letraAlfabeto == letra) {
+                    switch (opcao) {
+                        case 0:
+                            txtResposta += arrayAlfabeto[i + posicao]
+                            break;
+                        case 1:
+                            txtResposta += arrayAlfabeto[posicao - i]
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            } 
+        } txtResposta += ' '
     }
-    resposta.innerHTML += `O nome modificado: ${txtResposta}<br>`
+    resposta.innerHTML += `Nome modificado: ${txtResposta}<br> \ ---------------------------------------------<br>`
 }

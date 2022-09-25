@@ -5,18 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Algo com Nomes</title>
+    <title>CALCULADORA</title>
 </head>
 <body>
-    <header>CABEÇALHO</header>
-    <div class="container">
-        <label for="nome">Nome: <input type="text" class="nome" id="txtnome"></label>
-        <input type="button" value=" Modifica " onclick="processa()">
-    </div>
-    <div id="resposta">
-        <!-- resposta vai vir aqui -->
-    </div>
-    <footer>RODA PÉ</footer>
+    <header><h1>CALCULADORA MALUCA ABC</h1></header>
+    <section class="menu">
+        <div class="menu-item">
+            <label for="txtnome">Nome: <input type="text" class="menu-item-input" id="txtnome"></label>
+            <label for="numopcao">Opção: <select name="menu-item-input" id="numopcao">
+                <option value="0">Proxima Letra</option>
+                <option value="1">Letra Anterior</option>
+            </select></label>
+            <label for="numposicao">Quantidade de casas: <input type="number" class="menu-item-input" id="numposicao" max="5" min="1" placeholder="Max5" ></label>
+            <input type="button" value="Modificar" onclick="processa()">
+        </div>
+        <div class="menu-item" id="res">
+            
+        </div>
+    </section>
+    <footer class="footer">
+        <span>Feito por:</span>
+        <div class="footer-sessao">
+            <span class="footer-sessao-autor-nome">Fábio Bastian</span>
+            <div class="footer-sessao-autor">
+                <a href="https://github.com/FabioBastian" target="_blank" class="footer-sessao-link">Github</a>
+                <img src="github-logo.png" alt="logo github" class="logo-github">
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
