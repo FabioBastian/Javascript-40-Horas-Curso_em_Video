@@ -36,12 +36,14 @@ function processa(){
                             break;
                         case 1:
                             if (i <= posicao) {
-                                var acima = 26 + (i - posicao) 
-                                window.alert (acima)
+                                var acima = (26 + i) - posicao
+                                if (acima >= 26) {
+                                    acima -= 26;
+                                }
                                 txtResposta += arrayAlfabeto[acima]  
                             }
                             else{
-                                txtResposta += arrayAlfabeto[i + posicao]  
+                                txtResposta += arrayAlfabeto[i - posicao]  
                             }
                             break;
                         default:
