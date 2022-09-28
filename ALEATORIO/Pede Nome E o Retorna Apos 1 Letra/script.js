@@ -26,10 +26,23 @@ function processa(){
                 if (letraAlfabeto == letra) {
                     switch (opcao) {
                         case 0:
-                            txtResposta += arrayAlfabeto[i + posicao]
+                            if ((i + posicao) >= 25) {
+                                var acima = (i + posicao) - 26
+                                txtResposta += arrayAlfabeto[acima]  
+                            }
+                            else{
+                                txtResposta += arrayAlfabeto[i + posicao]  
+                            }
                             break;
                         case 1:
-                            txtResposta += arrayAlfabeto[posicao - i]
+                            if (i <= posicao) {
+                                var acima = 26 + (i - posicao) 
+                                window.alert (acima)
+                                txtResposta += arrayAlfabeto[acima]  
+                            }
+                            else{
+                                txtResposta += arrayAlfabeto[i + posicao]  
+                            }
                             break;
                         default:
                             break;
