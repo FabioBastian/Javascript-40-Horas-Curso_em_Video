@@ -26,7 +26,7 @@ function processa(){
                 if (letraAlfabeto == letra) {
                     switch (opcao) {
                         case 0:
-                            if ((i + posicao) >= 25) {
+                            if ((i + posicao) > 25) {
                                 var acima = (i + posicao) - 26
                                 txtResposta += arrayAlfabeto[acima]  
                             }
